@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>cIlpz — turn long streams into short vertical clips</title>
 <meta name="description" content="cIlpz turns long streams and videos into captioned 9:16 clips you review before they post.">
+<link rel="icon" type="image/png" href="app-icon.png">
+<link rel="apple-touch-icon" href="app-icon.png">
 <!-- TIKTOK URL VERIFICATION: paste the meta tag from the developer portal here. -->
 <style>
   :root { --ink:#15161a; --muted:#5c6070; --line:#e4e6ee; --bg:#ffffff; --accent:#0f7b6c; }
@@ -18,7 +20,8 @@
   header { border-bottom:1px solid var(--line); }
   header .wrap { display:flex; justify-content:space-between; align-items:center;
                  gap:16px; flex-wrap:wrap; padding-top:18px; padding-bottom:18px; }
-  .brand { font-weight:700; font-size:19px; letter-spacing:-.01em; }
+  .brand { font-weight:700; font-size:19px; letter-spacing:-.01em; display:flex; align-items:center; gap:9px; }
+  .brand img { width:26px; height:26px; border-radius:6px; display:block; }
   nav a { color:var(--muted); text-decoration:none; margin-left:18px; font-size:15px; }
   nav a:hover { color:var(--ink); text-decoration:underline; }
   h1 { font-size:34px; line-height:1.2; letter-spacing:-.02em; margin:44px 0 12px; }
@@ -38,7 +41,7 @@
 </head>
 <body>
 <header><div class="wrap">
-  <span class="brand">cIlpz</span>
+  <span class="brand"><img src="app-icon.png" alt="cIlpz"> cIlpz</span>
   <nav>
     <a href="#how">How it works</a>
     <a href="#tiktok">TikTok</a>
